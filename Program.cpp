@@ -16,10 +16,10 @@ private:
     const std::string fileName = "tasks.csv";
 
     void clearConsole() const {
-        system("CLS"); // For Windows
+        system("CLS");
     }
 
-    // Function to load tasks from CSV file
+    //This function loads tasks from a file
     void loadTasksFromFile() {
         std::ifstream file(fileName);
         if (!file.is_open()) {
@@ -181,29 +181,32 @@ public:
 
     void run() {
         int choice;
-        do {
+         while (choice != 4) {
             displayMenu();
             std::cin >> choice;
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
             switch (choice) {
                 case 1:
+                    system("CLS");
                     addItem();
                     break;
                 case 2:
+                    system("CLS");
                     viewItems();
                     break;
                 case 3:
+                    system("CLS");
                     markItemComplete();
                     break;
                 case 4:
-                    std::cout << "Exiting the app. Goodbye!\n";
                     break;
                 default:
+                    system("CLS");
                     std::cout << "Invalid choice. Please try again.\n";
                     break;
             }
-        } while (choice != 4);
+        };
     }
 };
 
