@@ -1,14 +1,14 @@
-#include <iostream>
-#include <fstream>
 #include <vector>
 #include <string>
 #include <sstream>
+#include <iostream>
+#include <fstream>
 #include <limits>
 
 using namespace std;
 
 class ChecklistApp {
-private:
+public:
     std::vector<std::string> checklist;
     std::vector<bool> isCompleted;
     std::vector<int> completionCounts;
@@ -60,14 +60,8 @@ private:
         file.close();
     }
 
-public:
-    ChecklistApp() {
-        loadTasksFromFile();
-    }
 
-    ~ChecklistApp() {
-        saveTasksToFile();
-    }
+
 
     //This function allows the user to add a task to the list.
     //It asks if it is a repeated task, then saves the info to a file
