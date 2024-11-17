@@ -1,11 +1,10 @@
 # Overview
 
-This program is a task list. It allows you to create tasks, view them, and then complete them. There are two kinds of tasks currently, standard tasks which can be completed once, and 
+This program is a task list. It allows you to create tasks, view them, and then complete them. There are two kinds of tasks currently, standard tasks which can be completed once, and tasks that can be completed multiple times. It allows the user to view incomplete and complete tasks, as well as make progress on the tasks, completing them if the number of needed completions is reached. It reads/writes tasks from a csv file, ensuring that data is preserved if the program is closed out. 
 
-{Describe your purpose for writing this software.}
+The purpose of this software is to show an example of how C++ can be used in app development. It also shows how C++ can read and write to files, interacting with the data contained inside.
 
-
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/ZXfED3c0o-E)
 
 # Development Environment
 
